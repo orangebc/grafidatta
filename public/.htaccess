@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+# Activar RewriteEngine
+RewriteEngine on
+# Ponemos el anclaje a la raíz de nuestro sitio
+RewriteBase /
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f
+
+RewriteRule ^(.*/)$ $1.html
+</IfModule>
