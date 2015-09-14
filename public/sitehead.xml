@@ -9,13 +9,16 @@
 <url>
   <loc>http://grafidatta.mx/</loc>
   <lastmod>2015-08-21T19:33:30+00:00</lastmod>
+  <changefreq>yearly</changefreq>
 </url>
 <url>
   <loc>http://grafidatta.mx/portafolio.html</loc>
   <lastmod>2015-08-21T19:33:30+00:00</lastmod>
+  <changefreq>yearly</changefreq>
 </url>
 <url>
   <loc>http://grafidatta.mx/contacto.html</loc>
   <lastmod>2015-08-25T23:45:13+00:00</lastmod>
+  <changefreq>yearly</changefreq>
 </url>
 </urlset>
