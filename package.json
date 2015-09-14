@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "styl": "stylus --use nib --watch ./lib/styles/styles.styl --out ./public/css",
+        "serve": "http-server"
+    }
+}

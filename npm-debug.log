@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'styl' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose run-script [ 'prestyl', 'styl', 'poststyl' ]
+5 info prestyl @
+6 info styl @
+7 verbose unsafe-perm in lifecycle true
+8 info @ Failed to exec styl script
+9 error @ styl: `stylus --use nib --compress --watch ./lib/styles/styles.styl --out ./public/css`
+9 error Exit status 1
+10 error Failed at the @ styl script.
+10 error This is most likely a problem with the  package,
+10 error not with npm itself.
+10 error Tell the author that this fails on your system:
+10 error     stylus --use nib --compress --watch ./lib/styles/styles.styl --out ./public/css
+10 error You can get their info via:
+10 error     npm owner ls
+10 error There is likely additional logging output above.
+11 error System Windows_NT 6.2.9200
+12 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "run" "styl"
+13 error cwd c:\Users\Alex\documents\Projects\Websites\grafidatta
+14 error node -v v0.10.35
+15 error npm -v 1.4.28
+16 error code ELIFECYCLE
+17 verbose exit [ 1, true ]

@@ -1,0 +1,395 @@
+// Markup and Code by AlejandroMAL
+// Email: me@alejandromartinez.mx
+// URL: www.github.com/AlejandroMAL
+// Twitter: @Pollodesu
+// Designed by: http://www.orangeboutiquecreativa.com
+
+@import 'nib'
+@import url('http://fonts.googleapis.com/css?family=Raleway:400,300,500,200,600,700,800,900')
+
+// Tags
+
+body
+    font-family 'Raleway', Arial, sans-serif
+    font-size 16px
+
+.fr
+    float right
+
+.nopadding
+    padding 0
+
+h1, h2, h3, h4, h5, h6
+    margin 0
+
+// Colors
+
+$baseGray = #a0a0a0
+
+
+// Basic
+
+.basic
+    &-title
+        color $baseGray
+        font-size 36px
+        font-weight 200
+        text-transform uppercase
+
+    &-subtitle
+        color $baseGray
+        font-size 21px
+        font-weight 200
+        text-transform uppercase
+        margin-bottom .5em
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            text-align center
+            line-height 1.5em
+    &-info
+        color $baseGray
+        font-weight 300
+        font-size 18px
+        line-height 1.5em
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            font-size 14px
+            text-align center
+
+    &-separator
+        outline 0
+        border 0
+        background-color $baseGray
+        width 60px
+        height 1px
+        margin-top 1.5em
+        margin-bottom 3em
+        margin-left 0
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            margin-left auto
+
+    &-bold--title
+        color $baseGray
+        font-size 32px
+        font-weight 800
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            margin-bottom .25em
+
+// Header
+
+.header
+    &__nav
+        padding 1em
+        text-align right
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            text-align center
+            padding 1em 0
+        ul
+            @media only screen and (min-width: 480px) and (max-width: 767px)
+                text-align center;
+            li
+                padding-right 2em
+
+                @media only screen and (min-width: 320px) and (max-width: 479px)
+                    padding-right 1em
+
+                @media only screen and (min-width: 480px) and (max-width: 767px)
+                    padding-right 0
+
+                img
+
+                    @media only screen and (min-width: 480px) and (max-width: 767px)
+                        width 120px
+                        height auto
+
+                    @media only screen and (min-width: 320px) and (max-width: 479px)
+                        width 120px
+                        display block
+
+                &:first-child
+                    a
+                        &:hover
+                            border-bottom 1px solid transparent
+                    @media only screen and (min-width: 320px) and (max-width: 479px)
+                        width 100%
+                        text-align center
+                a
+                    color #a0a0a0
+                    text-decoration none
+                    display inline-block
+                    @media only screen and (min-width: 320px) and (max-width: 479px)
+                        font-size 14px
+                    &:hover
+                        border-bottom 1px dashed $baseGray
+
+
+// Slider
+
+.bannerContainer
+    width:100%;
+    position:relative;
+    padding:0;
+
+.banner
+    width:100%;
+    position:relative;
+// About
+
+.about__container
+    padding 6em 3em
+    h2.basic-title
+        margin 3.5em 0
+        text-align center
+
+        @media only screen and (min-width: 768px) and (max-width: 991px)
+            margin 1em 0
+
+        @media only screen and (min-width: 480px) and (max-width: 767px)
+            margin 1em 0
+
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            margin 1em 0
+
+    @media only screen and (min-width: 768px) and (max-width: 991px)
+        padding 2em 0
+
+    @media only screen and (min-width: 480px) and (max-width: 767px)
+        padding 2em 0
+
+    @media only screen and (min-width: 320px) and (max-width: 479px)
+        padding 1em 0
+
+.slider
+    &-bold
+        text-shadow 2px 2px 2px rgba(0, 0, 0, .8)
+        color white
+        font-size 64px
+        font-weight 900
+        text-transform uppercase
+    &-light
+        text-shadow 2px 2px 2px rgba(0, 0, 0, .8)
+        color white
+        font-size 32px
+        font-weight 300
+
+// Services
+
+.services
+    &__container
+        padding: 0 8em
+
+        @media only screen and (min-width: 768px) and (max-width: 991px)
+            padding 1em 4em
+            text-align center
+
+        @media only screen and (min-width: 480px) and (max-width: 767px)
+            padding 1em 4em
+            text-align center
+
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            padding 3em 2em 1em 2em
+            text-align center
+
+    &__image--container
+        img
+            width 100%
+            height auto
+    &__container--list
+        list-style-type none
+        padding 1em 0
+        li
+            .basic-separator
+                margin-bottom 1em
+
+            @media only screen and (min-width: 768px) and (max-width: 991px)
+                margin-left auto !important
+                margin-right auto !important
+
+
+// Portfolio
+
+.portfolio
+    h2.basic-title
+        text-align center
+        margin 2em 0
+    &__item
+        position relative
+        img
+            width 100%
+            height auto
+    &__item-description
+        background-color $baseGray
+        position absolute
+        display block
+        padding 1em 2.5em
+        width 100%
+        bottom 0
+        left 0
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            position static
+
+
+
+.portfollio__item-description--name
+    color white
+    font-weight 700
+    font-size 18px
+.portfolio__item-description--description
+    color white
+    font-size 14px
+    font-weight 300
+    line-height 1.5em
+
+
+// Clients
+
+.clients
+    h2.basic-title
+        text-align center
+        margin 2em 0
+    .clients__logos--list
+        padding 0 0 2em 0
+        li
+            border 1px solid $baseGray
+            text-align center
+            display block
+            float left
+            width 25%
+            padding 2em 0 !important
+
+            @media only screen and (min-width: 768px) and (max-width: 991px)
+                width 50%
+
+            @media only screen and (min-width: 480px) and (max-width: 767px)
+                width 50%
+
+            @media only screen and (min-width: 320px) and (max-width: 479px)
+                width 100%
+
+    &__list, #test
+        max-width 1400px !important
+        margin-left auto !important
+        margin-right auto !important
+        text-align center
+        padding-bottom 2em !important
+        li
+            display inline-block !important
+            border-right 2px solid $baseGray
+            text-transform uppercase
+            font-weight 600
+            font-size 14px
+            margin-top 20px !important
+            padding 0 .8em !important
+            color $basicGre
+            &:last-child
+                border-right none
+
+            @media only screen and (min-width: 320px) and (max-width: 479px)
+                border-right none
+// Footer
+
+.footer
+    text-align center
+    &__container
+        border-top 1px solid $baseGray
+        border-bottom 1px solid $baseGray
+        width 100%
+        display block
+        padding 1em
+        margin-bottom 1em
+    .basic-info
+        a
+            color $baseGray
+            &:hover
+                text-decoration underline
+
+
+// Portfolio Page
+
+.portfolio-page
+    padding 2em 0
+
+    h2.basic-title
+        text-align center
+        margin-bottom 2em
+    &__item
+        padding 3em 1em
+        overflow hidden
+        &--title
+            color white
+            font-weight 900
+            font-size 38px
+            text-transform uppercase
+
+            @media only screen and (min-width: 320px) and (max-width: 479px)
+                font-size 24px
+
+        &--description
+            color white
+            font-weight 300
+            font-size 18px
+            max-width 600px
+        &--link
+            color white
+            font-weight 700
+            font-size 21px
+            text-transform uppercase
+            &:hover
+                color white
+                text-decoration underline
+    &__container
+        padding 2em
+
+
+
+
+
+.portfolio
+    &-unam
+        background url(../images/cl2-grafidatta.jpg) 50% 50%, center no-repeat
+        background-size cover
+    &-cAguirre
+        background url(../images/cl3-grafidatta.jpg) 50% 50%, center no-repeat
+        background-size cover
+    &-manacar
+        background url(../images/cl4-grafidatta.jpg) 50% 50%, center no-repeat
+        background-size cover
+    &-hsbc
+        background url(../images/cl5-grafidatta.jpg) 50% 50%, center no-repeat
+        background-size cover
+    &-cocaCola
+        background url(../images/cl1-grafidatta.jpg) 50% 50%, center no-repeat
+        background-size cover
+// Contact
+
+.contact
+    background url(../images/bggrafidatta.jpg) 50% 50%, center no-repeat
+    background-size cover
+    padding 4em 0
+    width 100%
+    &__container
+        max-width 500px
+        margin-left auto
+        margin-right auto
+        padding 2em 4em
+        background-color rgba(52, 52, 52, .8)
+        text-align center
+        @media only screen and (min-width: 320px) and (max-width: 479px)
+            padding 2em 1.5em
+        p.basic-info
+            font-size 14px
+        label
+            color $baseGray
+            text-transform uppercase
+            font-size 16px
+            font-weight 400
+        input[type="text"], input[type="tel"], input[type="email"],
+        textarea
+            background-color transparent !important
+            border 1px solid $baseGray
+            color white
+        input[type="submit"]
+            width 100%
+            border 1px solid $baseGray
+            color $baseGray
+            background-color transparent !important
+            font-size 18px
+            text-transform uppercase
